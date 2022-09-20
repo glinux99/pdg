@@ -1,76 +1,283 @@
 @extends('layouts.master')
 
 @section('title')
-Adhesion
+adhesion
 @endsection
 
 @section('content')
-<div class="our-articles bg-light-white m-3 mb-5">
-    <div class="container-fluid">
-        <div class="row no-gutters">
-            <div class="col-md-6">
-                <div class="main-banner">
-                    <img src="assets/img/slider.jpg" class="img-fluid full-width main-img" alt="banner">
+<!-- formulaire d'adhesion -->
+<div id="adhesion-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="col-md-8 mx-auto card mt-5">
+                <div class="card-body">
+                    <div class="mb-4 text-center">
+                        <img src="{{asset('assets/img/pdg.png')}}" style="height: 70px;" class="img-fluid" alt="img">
+                        <p class="fs-18 text-light-black  mb-0 text-uppercase fw-700">@lang("Formulaire d'adhesion")</p>
+                        <p class="my-2 opacity-60">@lang("ce formulaire d'adhesion vous pourmettra de jouir de tous les avantages en tant que membre du parti")
+                            <br>
+                            @lang("Veuillez a bien completer les champs ci-dessous")
+                        </p>
+                    </div>
+                    <div class="toggle">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Nom (s) ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre nom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Prenom (s) ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre prenom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Date de naissance ')</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Lieu de naissance ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre lieu de naissance" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Genre ')</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Feminin</option>
+                                        <option value="">Masculin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Province ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre province" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Telephone (s) ')</label>
+                                    <input type="text" class="form-control" value="+241" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('E-mail ')</label>
+                                    <input type="email" class="form-control" placeholder="votre adresse email ici" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="section-2 user-page main-padding">
-                    <div class="login-sec">
-                        <div class="login-box">
-                            <form>
-                                <h4 class="text-light-black fw-600">Creer votre compte</h4>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="text-light-white fs-14">Votre nom</label>
-                                            <input type="text" name="#" class="form-control form-control-submit" placeholder="" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="text-light-white fs-14">Votre prenom</label>
-                                            <input type="text" name="#" class="form-control form-control-submit" placeholder="" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label class="text-light-white fs-14">Adresse Email</label>
-                                            <input type="email" name="#" class="form-control form-control-submit" placeholder="" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="text-light-white fs-14">Mot de passe (8 characteres minimum)</label>
-                                            <input type="password" id="password-field" name="#" class="form-control form-control-submit" value="pdg@2022" placeholder="pdg-babonpassword" required>
-                                            <div data-name="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></div>
-                                        </div>
-                                        <div class="form-group checkbox-reset">
-                                            <label class="custom-checkbox mb-0">
-                                                <input type="checkbox" name="#"> <span class="checkmark"></span> Se souvenir de moi</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn-second-2 btn-submit full-width">Creer mon compte</button>
-                                        </div>
-                                        <div class="form-group text-center"> <span>or</span>
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn-second-2 btn-facebook full-width">
-                                                <img src="assets/img/facebook-logo.svg" alt="btn logo">Continuer avec Facebook</button>
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn-second-2 btn-google full-width">
-                                                <img src="assets/img/google-logo.png" alt="btn logo">Continuer avec Google</button>
-                                        </div>
-                                        <div class="form-group text-center">
-                                            <p class="text-light-black mb-0">Vous n'avez pas de compte? <a href="login.html">Se connecter</a>
-                                            </p>
-                                        </div> <span class="text-light-black fs-12 terms  mb-5">Vous acceptez nos<a href="#"> Termes</a> ainsi que la <a href="#"> Politique du parti.</a></span>
-                                    </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-8 mx-auto card mt-5">
+                <div class="card-body">
+                    <div class="mb-4 text-center">
+                        <img src="{{asset('assets/img/pdg.png')}}" style="height: 70px;" class="img-fluid" alt="img">
+                        <p class="fs-18 text-light-black  mb-0 text-uppercase fw-700">@lang("Formulaire d'adhesion")</p>
+                        <p class="my-2 opacity-60">@lang("ce formulaire d'adhesion vous pourmettra de jouir de tous les avantages en tant que membre du parti")
+                            <br>
+                            @lang("Veuillez a bien completer les champs ci-dessous")
+                        </p>
+                    </div>
+                    <div class="toggle">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Profession ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre nom" required>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Commune ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre prenom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Departement ')</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Arrondissement ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre lieu de naissance" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Quartier ')</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Feminin</option>
+                                        <option value="">Masculin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('District ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre distrct" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Canton ')</label>
+                                    <input type="text" class="form-control" value="" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Village ')</label>
+                                    <input type="email" class="form-control" placeholder="votre adresse email ici" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-8 mx-auto card mt-5">
+                <div class="card-body">
+                    <div class="mb-4 text-center">
+                        <img src="{{asset('assets/img/pdg.png')}}" style="height: 70px;" class="img-fluid" alt="img">
+                        <p class="fs-18 text-light-black  mb-0 text-uppercase fw-700">@lang("Formulaire d'adhesion")</p>
+                        <p class="my-2 opacity-60">@lang("ce formulaire d'adhesion vous pourmettra de jouir de tous les avantages en tant que membre du parti")
+                            <br>
+                            @lang("Veuillez a bien completer les champs ci-dessous")
+                        </p>
+                    </div>
+                    <div class="toggle">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('commune ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre nom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Departement ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre prenom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Arrondissement ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre lieu de naissance" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Quartier ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre distrct" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('District ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre distrct" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Canton ')</label>
+                                    <input type="text" class="form-control" value="" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Village ')</label>
+                                    <input type="email" class="form-control" placeholder="votre adresse email ici" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Siege ')</label>
+                                    <input type="email" class="form-control" placeholder="votre adresse email ici" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-8 mx-auto card mt-5">
+                <div class="card-body">
+                    <div class="mb-4 text-center">
+                        <img src="{{asset('assets/img/pdg.png')}}" style="height: 70px;" class="img-fluid" alt="img">
+                        <p class="fs-18 text-light-black  mb-0 text-uppercase fw-700">@lang("Formulaire d'adhesion")</p>
+                        <p class="my-2 opacity-60">@lang("ce formulaire d'adhesion vous pourmettra de jouir de tous les avantages en tant que membre du parti")
+                            <br>
+                            @lang("Veuillez a bien completer les champs ci-dessous")
+                        </p>
+                    </div>
+                    <div class="toggle">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Federation ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre nom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Section ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre prenom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Comite ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre lieu de naissance" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Cellule ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre distrct" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Centre de vote ')</label>
+                                    <input type="text" class="form-control" placeholder="tapez ici votre distrct" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">@lang('Bureau de vote N` ')</label>
+                                    <input type="text" class="form-control" value="" required>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="form-group d-flex justify-content-center my-4">
+        <button type="button" class="btn-second-2 btn-submit px-5 carousel-control-prev" href="#adhesion-carousel" role="button" data-slide="prev">Arriere</button>
+        <button type="button" class="btn-second-2 btn-submit px-5 carousel-control-next" href="#adhesion-carousel" role="button" data-slide="next">Suivant</button>
+    </div>
+    <!-- <a class="carousel-control-prev" href="#adhesion-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>-->
+    <!-- <a class="carousel-control-next" href="#adhesion-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a> -->
 </div>
 @endsection

@@ -24,8 +24,13 @@ Route::group(['as' => 'pdg::'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/about', [AboutController::class, 'index'])->name('about');
     Route::get('/organisation', [OrganisationController::class, 'index'])->name('organisation');
-    Route::get('/donation', [DonationController::class, 'index'])->name('donation');
-    Route::get('/adhesion', [UserController::class, 'adhesion'])->name('adhesion');
+    Route::get('/election', [DonationController::class, 'index'])->name('election');
+    Route::get('/login', [UserController::class, 'login'])->name('login');
     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
     Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+    Route::get('/register', [UserController::class, 'register'])->name('register');
+    Route::get('/adhesion', [UserController::class, 'adhesion'])->name('adhesion');
+    Route::get('/actualite', function () {
+        return view('pages.actusparti');
+    });
 });

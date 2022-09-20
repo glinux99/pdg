@@ -1,133 +1,108 @@
-<footer class="section-padding bg-light-theme pt-0 u-line bg-custom-primary">
-    <div class="u-line instagram-slider swiper-container">
-        <ul class="hm-list hm-instagram swiper-wrapper">
-            <li class="swiper-slide">
-                <a href="#">
-                    <img src="{{asset('assets/img/insta/insta1.png')}}" alt="instagram">
-                </a>
-                <div class="insta-icon">
-                    <div><i class="fab fa-instagram text-red-light"></i>
-                    </div>
-                </div>
-            </li>
-            <li class="swiper-slide">
-                <a href="#">
-                    <img src="{{asset('assets/img/insta/insta2.jpeg')}}" alt="instagram">
-                </a>
-                <div class="insta-icon">
-                    <div><i class="fab fa-instagram text-red-light"></i>
-                    </div>
-                </div>
-            </li>
-            <li class="swiper-slide">
-                <a href="#">
-                    <img src="{{asset('assets/img/insta/insta31.jpg')}}" alt="instagram">
-                </a>
-                <div class="insta-icon">
-                    <div><i class="fab fa-instagram text-red-light"></i>
-                    </div>
-                </div>
-            </li>
-            <li class="swiper-slide">
-                <a href="#">
-                    <img src="{{asset('assets/img/insta/insta41.jpg')}}" alt="instagram">
-                </a>
-                <div class="insta-icon">
-                    <div><i class="fab fa-instagram text-red-light"></i>
-                    </div>
-                </div>
-            </li>
-            <li class="swiper-slide">
-                <a href="#">
-                    <img src="{{asset('assets/img/insta/insta5.jpeg')}}" alt="instagram">
-                </a>
-                <div class="insta-icon">
-                    <div><i class="fab fa-instagram text-red-light"></i>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="container-fluid custom-container">
+<!-- Sucscriber -->
+<section class="section-padding block_newsletter">
+    <div class="container">
         <div class="row">
-            <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                <div class="footer-contact">
-                    <h6 class="text-custom-white">A propos de nous</h6>
-                    <div class="logo mb-xl-20">
-                        <a href="#">
+            <div class="col-12">
+                <div class="section-header-left text-center">
+                    <h3 class="text-light-black header-title">S'inscrire au Newsletter</h3>
+                    <p>Pour recevoir les dernières offres et réductions de la boutique. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="subscribe-wrapper">
+                    <form id="subscribe-form" method="post" action="#">
+                        <div class="subscribe-content">
+                            <input type="text" name="subscribe-input" id="subscribe-input" value="" placeholder="Entrez votre adresse email" class="form-control input-text required-entry validate-email">
+                            <button class="button" type="submit"><span>S'abonner</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END Subscriber -->
+<section class="section-padding bg-light-theme pt-0 u-line bg-custom-primary">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-6 d-none d-lg-block d-md-block text-center text-md-left">
+                <div class="row mt-2">
+                    <div class="col-md-3 d-flex align-items-center">
+                        <a href="{{ ('index')}}">
                             <img src="{{asset('assets/img/pdg.png')}}" style="height: 70px;" class="img-fluid" alt="img">
                         </a>
                     </div>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <div class="my-3 col-md-9">
+                        <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                            @lang('Parti Democratique Gabonais')
+                        </h4>
+                        <p class="text-justify fs-13">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, doloribus voluptates nemo cupiditate assumenda accusantium magnam, rerum veniam omnis cum nulla nostrum sequi animi nisi, rem illum! Adipisci debitis architecto voluptatem repellat odio. Laudantium ex provident culpa incidunt obcaecati suscipit!</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                <div class="footer-links">
-                    <h6 class="text-custom-white">Apprendre a nous connaitre</h6>
-                    <ul>
-                        <li><a href="#" class="text-white fw-500">A propos de nous</a>
+            <div class="col-lg-3 col-6 ml-auto col-md-4 mr-0">
+                <div class="text-left mt-4">
+                    <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                        @lang('Liens rapides')
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="opacity-90 hov-opacity-100 text-reset">
+                                @lang('Dons')
+                            </a>
                         </li>
-                        <li><a href="#" class="text-white fw-500">Actualites</a>
+                        <li class="mb-2">
+                            <a href="#" class="opacity-90 hov-opacity-100 text-reset">
+                                @lang("Support")
+                            </a>
                         </li>
-                        <li><a href="#" class="text-white fw-500">Organisation</a>
+                        <li class="mb-2">
+                            <a href="{{ ('contact')}}" class="opacity-90 hov-opacity-100 text-reset">
+                                @lang("Joignez-nous")
+                            </a>
                         </li>
-                        <li><a href="#" class="text-white fw-500">Dons</a>
+                        <li class="mb-2">
+                            <a href="{{ ('contact')}}" class="opacity-90 hov-opacity-100 text-reset">
+                                @lang("Contactez-nous")
+                            </a>
                         </li>
-                        <li><a href="#" class="text-white fw-500">Adhesion</a>
+                        <li class="mb-2">
+                            <a href="#" class="opacity-90 hov-opacity-100 text-reset">
+                                @lang("Mot du president")
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                <div class="footer-links">
-                    <h6 class="text-custom-white">Laissez-nous vous aider</h6>
-                    <ul>
-                        <li><a href="#" class="text-white fw-500">Détails du comptabilité</a>
+            <div class="col-lg-2 col-6 col-md-4">
+                <div class="text-left mt-4">
+                    <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                        @lang("Contact")
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <span class="d-block opacity-90">@lang("Adresse")</span>
+                            <span class="d-block opacity-70"> Libreville, district Ongue</span>
                         </li>
-                        <li><a href="#" class="text-white fw-500">Historique</a>
+                        <li class="mb-2">
+                            <span class="d-block opacity-90">@lang("Telephone")</span>
+                            <span class="d-block opacity-70">(+241) 765 123 9887 </span>
                         </li>
-                        <li><a href="#" class="text-white fw-500">Se connecter</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                <div class="footer-links">
-                    <h6 class="text-custom-white">Apprendre a nous connaitre</h6>
-                    <ul>
-                        <li><a href="#" class="text-white fw-500">À propos de nous</a>
-                        </li>
-                        <li><a href="#" class="text-white fw-500">Actualites</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                <div class="footer-links">
-                    <h6 class="text-custom-white">Contactez-nous</h6>
-                    <ul class="contact-info">
-                        <li>
-                            <a href="#" class="text-white"> <span><i class="pe-7s-timer"></i></span>
-                                Lundi - Vendredi: 8:00 AM - 06:00 PM</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-white"> <span><i class="pe-7s-mail"></i></span>
-                                info@pdg.com</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-white"> <span><i class="pe-7s-call"></i></span>
-                                (+241) 765 123 9887</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-white"> <span><i class="pe-7s-map-marker"></i></span>
-                                (+241) 765 123 9887</a>
+                        <li class="mb-2">
+                            <span class="d-block opacity-90">@lang('Email:')</span>
+                            <span class="d-block opacity-70">
+                                <a href="mailto:" class="text-white">info@pdg.com</a>
+                            </span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-</footer>
+</section>
+<!-- FOOTER -->
 <div class="copyright bg-black">
     <div class="container-fluid custom-container">
         <div class="row">
@@ -137,10 +112,20 @@
                 <div class="copyright-text"> <span class="text-white">© <a href="#" class="text-white">subnetcongo.net</a> - 2022 | All Right Reserved</span>
                 </div>
             </div>
+            <div class="col-lg-4">
+                <div class="text-center text-md-right">
+                    <ul class="list-inline mb-0">
+                        <a href="" class="text-white">
+                            <span class="text-center text-md-left">
+                                @lang("Terms & Condition | Cookie Policy")
+                            </span>
+                        </a>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
 <!-- footer -->
 <div class="modal" id="quick_view">
     <div class="modal-dialog modal-lg modal-dialog-centered">

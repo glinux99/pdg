@@ -11,11 +11,6 @@ Contactez-nous
     <div class="container">
         <div class="breadcrumb-content">
             <h2>Contactez-nous</h2>
-            <ul>
-                <li><a href="/">Accueil</a>
-                </li>
-                <li class="active">Contactez-nous</li>
-            </ul>
         </div>
     </div>
 </div>
@@ -30,7 +25,7 @@ Contactez-nous
             <h3 class="text-light-black header-title">Faites-le en un seul click</h3>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-8">
                 <form class="form_validate ajax_submit form_alert" action="#" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-6">
@@ -68,29 +63,37 @@ Contactez-nous
                     </div>
                 </form>
             </div>
-        </div>
-    </div>
-</section>
+            <div class="col-4 bg-adresse pt-4 rounded">
+                <h6 class="text-center">Les Adresses de Nos QG</h6>
+                @php
+                $adresses = array(
+                1=>[
+                "province"=>"PROVINCE DU MOYEN-OGOOUÉ"],
+                2=>[
+                "province"=>"PROVINCE DU HAUT-OGOOUÉ"],
+                3=>[
+                "province"=>"PROVINCE DE LA NGOUNIÉ"],
+                4=>[
+                "province"=>"PROVINCE DE L'OGOOUÉ-IVINDO"],
+                5=>[
+                "province"=>"PROVINCE DE L'OGOOUÉ-LOLO"],
+                6=>[
+                "province"=>"PROVINCE DE LA NYANGA"],
+                7=>[
+                "province"=>"PROVINCE DE L'ESTUAIRE"],
+                7=>[
+                "province"=>"PROVINCE DE L'OGOOUÉ-MARITIME"],
+                7=>[
+                "province"=>"PROVINCE DE WOLEU-NTEM"],
+                );
+                @endphp
+                <div class="col-md-12">
+                    @foreach ($adresses as $adresse)
+                    <div class="form-group">
+                        <label class=" fw-600">{{ $adresse['province']}}</label>
 
-<section class="section-padding block_newsletter" style="background: linear-gradient(274deg, #021048, #aeb32f);">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-header-left text-center">
-                    <h3 class="text-light-black header-title">Saisissez notre newsletter</h3>
-                    <p>Pour recevoir les dernières informations sur notre parti politique PDG gabon </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="subscribe-wrapper">
-                    <form id="subscribe-form" method="post" action="#">
-                        <div class="subscribe-content">
-                            <input type="text" name="subscribe-input" id="subscribe-input" value="" placeholder="Entrez votre adresse email" class="form-control input-text required-entry validate-email">
-                            <button class="button" type="submit"><span>S'abonner</span></button>
-                        </div>
-                    </form>
+                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

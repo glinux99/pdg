@@ -129,88 +129,68 @@
     </div>
 </section>
 
-<!-- advertisement banner-->
-<section class="section-padding advertisement-banner-1 center-bg-effect">
-    <div class="container-fluid custom-container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="advertisement-text-1 center-block-div">
-                    <h6 class="sub-head">Nos Causes</h6>
-                    <h3 class="text-white heading">Changeons le monde<span class="text-white">Avec l'Humanité</span></h3>
+<section class="actualites-home py-5">
+    <div class="mx-3 ">
+        <div class="px-2 py-4 px-md-4 py-md-3 shadow-sm rounded">
 
-                    <a href="#" class="btn btn-text btn-text-white mt-20">Devenir bénévole</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- advertisement banner-->
-<section class="section-padding ex-collection" style="background: linear-gradient(274deg, #021048, #6fa591);">
-    <div class="container-fluid custom-container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-header-left">
-                    <h3 class="text-light-white header-title title">Nos campagnes de dons</h3>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
-                <div class="story-wrapper">
-                    <img src="assets/img/donation/barticle1.png" alt="" class="full-width img-fluid mx-auto d-block">
-                    <div class="story-box-content story-content-wrapper">
-                        <span class="story-badge bg-custom-secondary text-color-primary">Politique</span>
-                        <h5><a href="#">Maintenant ou jamais</a> </h5>
-                        <a href="shop-details.html" class="btn btn-text btn-text-white">Lire Plus</a>
+            <h5 class="h5 fw-700 mb-0 text-center text-title-2 ">
+                <span class="2 pb-3 d-inline-block  mb-5 text-white">@lang("Actualites")</span>
+            </h5>
+            <div class="produits">
+                <div class="row">
+                    @php
+                    $actus = [
+                    1=>[
+                    "images" => "assets/img/donation/barticle1.png",
+                    "categorie" => "Election",
+                    "title"=>"Mis en place de Kit pour le lancement des Elections au Gabon"],
+                    2=>[
+                    "images" => "assets/img/donation/barticle2.jpeg",
+                    "categorie" => "Pdg parti",
+                    "title"=>"Meting du president avec les membres du parti"],
+                    2=>[
+                    "images" => "assets/img/donation/barticle3.jpeg",
+                    "categorie" => "Energie",
+                    "title"=>" la construction de la centrale de Ngoulmendjim"],
+                    3=>[
+                    "images" => "assets/img/donation/barticle4.jpeg",
+                    "categorie" => "Societe",
+                    "title"=>"Gabon : inauguration du nouveau siège du PDG à Franceville"],
+                    4=>[
+                    "images" => "assets/img/donation/barticle8.jpeg",
+                    "categorie" => "Election",
+                    "title"=>"Le Président de la République échange avec le Premier ministre et le ministre du Budget"],
+                    ];
+                    @endphp
+                    <!-- actus -->
+                    @foreach ($actus as $actualite)
+                    <div class="col-md-3 col-lg-3 col-6 carousel-box">
+                        <div class="aiz-card-box border border-light rounded hov-shadow-md mt-1 mb-2 has-transition bg-white">
+                            <div class="position-relative">
+                                <a href="" class="d-block">
+                                    <img class="img-fit lazyload mx-auto h-140px h-md-210px" src="{{ $actualite['images']}}" data-src="{{ $actualite['images']}}" alt="">
+                                </a>
+                                <span class="absolute-bottom-left fs-11 text-white fw-600 px-2 lh-1-8" style="background-color: #455a64">
+                                    {{ $actualite['categorie']}}
+                                </span>
+                            </div>
+                            <div class="p-md-3 p-2 text-left">
+                                <div class="rating rating-sm mt-1">
+                                    <i class='las la-star active'></i><i class='las la-star active'></i><i class='las la-star active'></i><i class='las la-star active'></i><i class='las la-star active'></i>
+                                </div>
+                                <h5 class="fw-600 fs-15 text-truncate-2 lh-1-4 mb-0 h-40px">
+                                    <a href="#" class="d-block text-reset">{{ $actualite['title']}}</a>
+                                </h5>
+
+                            </div>
+                            <p class="my-0">
+                            <div class="d-flex justify-content-center" role="group" aria-label="Third group">
+                                <a href="#" class="with-line mr-1"><span class="fw-700" style="color:blue;">Lire plus ...</span></a>
+                            </div>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
-                <div class="story-wrapper">
-                    <img src="assets/img/donation/barticle2.jpeg" alt="" class="full-width img-fluid mx-auto d-block">
-                    <div class="story-box-content story-content-wrapper">
-                        <span class="story-badge bg-custom-secondary text-color-primary">Politique</span>
-                        <h5><a href="#">Aide aux enfants de l'Est</a> </h5>
-                        <a href="shop-details.html" class="btn btn-text btn-text-white">Lire Plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
-                <div class="story-wrapper">
-                    <img src="assets/img/donation/barticle3.jpeg" alt="" class="full-width img-fluid mx-auto d-block">
-                    <div class="story-box-content story-content-wrapper">
-                        <span class="story-badge bg-custom-secondary text-color-primary">Politique</span>
-                        <h5><a href="#">pour être pris au sérieux</a> </h5>
-                        <a href="shop-details.html" class="btn btn-text btn-text-white">Lire Plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
-                <div class="story-wrapper">
-                    <img src="assets/img/donation/barticle4.png" alt="" class="full-width img-fluid mx-auto d-block">
-                    <div class="story-box-content story-content-wrapper">
-                        <span class="story-badge bg-custom-secondary text-color-primary">Politique</span>
-                        <h5><a href="#">Le président qu'il nous faut</a> </h5>
-                        <a href="shop-details.html" class="btn btn-text btn-text-white">Lire Plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
-                <div class="story-wrapper">
-                    <img src="assets/img/donation/barticle5.jpeg" alt="" class="full-width img-fluid mx-auto d-block">
-                    <div class="story-box-content story-content-wrapper">
-                        <span class="story-badge bg-custom-secondary text-color-primary">Politique</span>
-                        <h5><a href="#">Faire le vide pour faire le bien</a> </h5>
-                        <a href="shop-details.html" class="btn btn-text btn-text-white">Lire Plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
-                <div class="story-wrapper">
-                    <img src="assets/img/donation/barticle6.jpg" alt="" class="full-width img-fluid mx-auto d-block">
-                    <div class="story-box-content story-content-wrapper">
-                        <span class="story-badge bg-custom-secondary text-color-primary">Politique</span>
-                        <h5><a href="#">collectes de vêtements</a> </h5>
-                        <a href="shop-details.html" class="btn btn-text btn-text-white">Lire Plus</a>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -220,91 +200,27 @@
 <section class="section-padding advertisement-banner-1 center-bg-effect">
     <div class="container-fluid custom-container">
         <div class="row">
-            <div class="col-12">
-                <div class="section-header-left">
-                    <h3 class="text-light-black header-title title" style="color:white;">Dons</h3>
-                </div>
+            <div class="col-md-6">
+                <img src="assets/img/donation/alibongoafrique.jpg" alt="" class="d-block img-fit rounded shadow-sm overflow-hidden w-100">
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="sa-causes-single sa-causes-single-2">
-                    <div class="causes-details-wrap">
-                        <div class="causes-details">
-                            <h5><a href="#">L'honorable exclue du PDG</a></h5>
-                            <p>Elle n’aura même pas eu le temps de porter son écharpe au sein de l’Assemblée Nationale,...</p>
-                            <div class="entry-thumb mtmb-spacing">
-                                <img src="{{asset('assets/img/donation/barticle7.jpg')}}" alt="img" class="img-fluid full-width">
-                                <div class="dontaion-category"><a href="#">Education</a></div>
-                            </div>
-                            <div class="causes-amount">
-                                <div class="left">
-                                    <p>Soulevé</p>
-                                    <span>$100.00</span>
-                                </div>
-                                <div class="right">
-                                    <p>Objectif</p>
-                                    <span>$4585.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-area text-center">
-                        <a class="btn-donation text-btn" href="#">Donner aujourd'hui</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="sa-causes-single sa-causes-single-2">
-                    <div class="causes-details-wrap">
-                        <div class="causes-details">
-                            <h5><a href="#">Maintenir le gouvernement du Congrès</a></h5>
-                            <p>membre du bureau politique du Parti Démocratique Gabonais et récemment,...</p>
-                            <div class="entry-thumb mtmb-spacing">
-                                <img src="{{asset('assets/img/donation/barticle3.jpeg')}}" alt="img" class="img-fluid full-width">
-                                <div class="dontaion-category"><a href="#">Santé</a></div>
-                            </div>
-                            <div class="causes-amount">
-                                <div class="left">
-                                    <p>Soulevé</p>
-                                    <span>$100.00</span>
-                                </div>
-                                <div class="right">
-                                    <p>Objectif</p>
-                                    <span>$4585.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-area text-center">
-                        <a class="btn-donation text-btn" href="#">Donner aujourd'hui</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="sa-causes-single sa-causes-single-2">
-                    <div class="causes-details-wrap">
-                        <div class="causes-details">
-                            <h5><a href="#">Offrir un meilleur environnement</a></h5>
-                            <p>Il est crutial pour le peuple africain...</p>
-                            <div class="entry-thumb mtmb-spacing">
-                                <img src="{{asset('assets/img/donation/barticle4.png')}}" alt="img" class="img-fluid full-width">
-                                <div class="dontaion-category"><a href="#">Hygiene</a></div>
-                            </div>
-                            <div class="causes-amount">
-                                <div class="left">
-                                    <p>Soulevé</p>
-                                    <span>$100.00</span>
-                                </div>
-                                <div class="right">
-                                    <p>Objectif</p>
-                                    <span>$4585.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-area text-center">
-                        <a class="btn-donation text-btn" href="#">Donner aujourd'hui</a>
-                    </div>
-                </div>
+            <div class="col-md-6 text-justify">
+                <h5>Mot du president Camarade</h5>
+                <i class="fs-15">Gabonaises, Gabonais,
+                    Mes très chers compatriotes,
+
+                    « We made it ! »
+
+                    Cette expression, en langue anglaise, signifie : « Nous y sommes arrivés ! »
+
+                    Le 25 juin 2022, le Gabon est devenu membre du Commonwealth, une famille forte de 56 pays regroupant 2,5 milliards de personnes.
+
+                    Ce jour est historique.
+
+                    62 ans après notre Indépendance, notre pays s’apprête à ouvrir une nouvelle et, j’en suis certain, glorieuse page de son Histoire.
+
+                    L’idée de faire adhérer le Gabon au Commonwealth, je l’ai longtemps mûrie avant de prendre ma décision. Cette décision, je l’ai, par la suite, toujours assumée. Contre vents et marées. Et Dieu sait si les vents ont souvent été contraires.
+
+                    Je tiens ici à remercier l’ensemble des membres de cette grande famille, qu’est le Commonwealth, qui nous ont soutenus et ont permis l’intégration de notre pays au sein de cette organisation de premier plan.</i>
             </div>
         </div>
     </div>
@@ -355,91 +271,6 @@
     </div>
 </section>
 <!--Testimonail End-->
-<!-- Blog section -->
-<section class="section-padding blog-section bg-theme-primary" style="background: linear-gradient(274deg, #021048, #aeb32f);">
-    <div class="container-fluid custom-container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-header-left title">
-                    <h3 class="text-light-black header-title">Nos dernières nouvelles</h3>
-                    <span class="fs-16"><a href="#.html">Voir tout</a></span>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-                <article class="blog-item blog-item-box">
-                    <div class="blog-item-img">
-                        <img class="blog-img" src="assets/img/blog/barticle4.png" alt="img">
-                        <ul class="blog-item-badge">
-                            <li><a href="#">Hygiene</a> </li>
-                        </ul>
-                    </div>
-                    <div class="blog-item-content">
-                        <h5 class="blog-item-title"><a href="#">La "task force" gazière désormais dans les mains</a></h5>
-                        <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail canthigaster</p>
-                        <div class="blog-item-details">
-                            <span class="blog-item-date"><i class="fas fa-calendar-week"></i> 20 Aug' 20</span>
-                            <span><i class="fas fa-comment-dots"></i> 501</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-                <article class="blog-item blog-item-box">
-                    <div class="blog-item-img">
-                        <img class="blog-img" src="assets/img/blog/barticle5.jpeg" alt="img">
-                        <ul class="blog-item-badge">
-                            <li><a href="#">Santé</a></li>
-                        </ul>
-                    </div>
-                    <div class="blog-item-content">
-                        <h5 class="blog-item-title"><a href="#">Conseiller présidentiel Jean-Pierre Boussougou</a></h5>
-                        <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail canthigaster</p>
-                        <div class="blog-item-details">
-                            <span class="blog-item-date"><i class="fas fa-calendar-week"></i> 20 Aug' 20</span>
-                            <span><i class="fas fa-comment-dots"></i> 501</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-                <article class="blog-item blog-item-box">
-                    <div class="blog-item-img">
-                        <img class="blog-img" src="assets/img/blog/barticle6.jpg" alt="img">
-                        <ul class="blog-item-badge">
-                            <li><a href="#">Eau</a> </li>
-                        </ul>
-                    </div>
-                    <div class="blog-item-content">
-                        <h5 class="blog-item-title"><a href="#">Gabon: l’honorable exclue du PDG !</a></h5>
-                        <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail canthigaster</p>
-                        <div class="blog-item-details">
-                            <span class="blog-item-date"><i class="fas fa-calendar-week"></i> 20 Aug' 20</span>
-                            <span><i class="fas fa-comment-dots"></i> 501</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-                <article class="blog-item blog-item-box">
-                    <div class="blog-item-img">
-                        <img class="blog-img" src="assets/img/blog/barticle8.jpeg" alt="img">
-                        <ul class="blog-item-badge">
-                            <li><a href="#">Tout genre</a> </li>
-                        </ul>
-                    </div>
-                    <div class="blog-item-content">
-                        <h5 class="blog-item-title"><a href="#">Save the American's Role in Fight Against Malnutrition Hailed</a></h5>
-                        <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail canthigaster</p>
-                        <div class="blog-item-details">
-                            <span class="blog-item-date"><i class="fas fa-calendar-week"></i> 20 Aug' 20</span>
-                            <span><i class="fas fa-comment-dots"></i> 501</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- END/BLOG Section -->
 <!-- Start Paravideo and icon -->
 <section class="section-padding-top paravideo-icon-sec">
@@ -543,30 +374,5 @@
     </div>
 </div>
 <!-- End Paravideo and icon -->
-<!-- Sucscriber -->
-<section class="section-padding block_newsletter">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-header-left text-center">
-                    <h3 class="text-light-black header-title">S'inscrire au Newsletter</h3>
-                    <p>Pour recevoir les dernières offres et réductions de la boutique. </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="subscribe-wrapper">
-                    <form id="subscribe-form" method="post" action="#">
-                        <div class="subscribe-content">
-                            <input type="text" name="subscribe-input" id="subscribe-input" value="" placeholder="Entrez votre adresse email" class="form-control input-text required-entry validate-email">
-                            <button class="button" type="submit"><span>S'abonner</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END Subscriber -->
+
 @endsection

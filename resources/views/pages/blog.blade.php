@@ -11,11 +11,6 @@ Actualites
     <div class="container">
         <div class="breadcrumb-content">
             <h2>Actualites</h2>
-            <ul>
-                <li><a href="#">Accueil</a>
-                </li>
-                <li class="active">Actualites</li>
-            </ul>
         </div>
     </div>
 </div>
