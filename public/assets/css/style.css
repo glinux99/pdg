@@ -532,6 +532,19 @@ blockquote p {
     word-break: break-word;
 }
 
+
+#adhesion-carousel {
+    background: hsla(109, 100%, 49%, 1);
+
+    background: linear-gradient(45deg, hsla(109, 100%, 49%, 1) 0%, hsla(49, 100%, 49%, 1) 100%);
+
+    background: -moz-linear-gradient(45deg, hsla(109, 100%, 49%, 1) 0%, hsla(49, 100%, 49%, 1) 100%);
+
+    background: -webkit-linear-gradient(45deg, hsla(109, 100%, 49%, 1) 0%, hsla(49, 100%, 49%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#2DF800", endColorstr="#FACC00", GradientType=1);
+}
+
 blockquote h6 {
     color: #000;
     font-weight: 400;
