@@ -7,6 +7,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DonationController;
+use App\Http\Controllers\DonController;
 use App\Http\Controllers\OrganisationController;
 
 /*
@@ -33,4 +34,6 @@ Route::group(['as' => 'pdg::'], function () {
     Route::get('/actualite', function () {
         return view('pages.actusparti');
     });
+    // payment or dons with paypal mode
+    Route::post('/donnation', [DonController::class, 'dons'])->name('dons.membre');
 });
