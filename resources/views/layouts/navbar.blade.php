@@ -19,7 +19,7 @@
                         <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a> </li>
                         <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a> </li>
                     </ul>
-                    <a href="/donation" class="top-btn">DONNEZ AUJOURD'HUI</a>
+                    <a href="#" class="top-btn" data-target="#donation" data-toggle="modal">DONNEZ AUJOURD'HUI</a>
                 </div>
             </div>
         </div>

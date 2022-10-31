@@ -18,16 +18,18 @@ class DonController extends Controller
     public function dons(Request $request)
     {
         try {
-            $response = $this->gateway->purchase(array(
-                'amount' => $request->amount,
-                'currency' => env('PAYPAL_CURRENCY '),
-                'retrunUrl' => url('success'),
-                'cancelUrl' => url('error')
-            ));
-            if ($request->isRedirect()) {
-                $request->redirect();
+            $response = $this->gateway->purchase(
+                array(
+                    'amount' => $request->amount,
+                    'currency' => env('PAYPAL_CURRENCY'),
+                    'retrunUrl' => url('success'),
+                    'cancelUrl' => url('error')
+                )
+            );
+            if ($response->isRedirect()) {
+                $response->redirect();
             } else {
-                return $request->getMessage();
+                return $response->getMessage();
             }
         } catch (\Throwable $th) {
             return $th->getMessage();

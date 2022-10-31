@@ -24,14 +24,8 @@ adhesion
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">@lang('Nom (s) ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre nom" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="">@lang('Prenom (s) ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre prenom" required>
+                                        <label for="">@lang('Nom(s) et Prénom(s) :')</label>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici vos noms et prenoms" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -48,7 +42,7 @@ adhesion
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">@lang('Genre ')</label>
+                                        <label for="">@lang('Sexe')</label>
                                         <select name="" id="" class="form-control">
                                             <option value="">Feminin</option>
                                             <option value="">Masculin</option>
@@ -71,6 +65,13 @@ adhesion
                                     <div class="form-group">
                                         <label for="">@lang('E-mail ')</label>
                                         <input type="email" class="form-control" placeholder="votre adresse email ici" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">@lang('Profession ')</label>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre profession" required>
                                     </div>
                                 </div>
                             </div>
@@ -97,12 +98,6 @@ adhesion
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">@lang('Profession ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre profession" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
                                         <label for="">@lang('Commune ')</label>
                                         <input type="text" class="form-control" placeholder="Ecrivez ici votre commune" required>
                                     </div>
@@ -110,13 +105,13 @@ adhesion
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Departement ')</label>
-                                        <input type="date" class="form-control" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre departement" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Arrondissement ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre lieu de naissance" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre arrondissement" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -134,13 +129,13 @@ adhesion
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Canton ')</label>
-                                        <input type="text" class="form-control" value="" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre canton" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Village ')</label>
-                                        <input type="email" class="form-control" placeholder="votre adresse email ici" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre village" required>
                                     </div>
                                 </div>
                             </div>
@@ -168,49 +163,49 @@ adhesion
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('commune ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre nom" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici la commune de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Departement ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre prenom" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici le departement de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Arrondissement ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre lieu de naissance" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici l'arrondissement de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Quartier ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre distrct" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici le quartier de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('District ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre distrct" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici le district de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Canton ')</label>
-                                        <input type="text" class="form-control" value="" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici la canton de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Village ')</label>
-                                        <input type="email" class="form-control" placeholder="votre adresse email ici" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici le village de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Siege ')</label>
-                                        <input type="email" class="form-control" placeholder="votre adresse email ici" required>
+                                        <input type="email" class="form-control" placeholder="Ecrivez ici le siege de votre bureau de vote" required>
                                     </div>
                                 </div>
                             </div>
@@ -238,25 +233,25 @@ adhesion
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Federation ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre Federation" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici la Federation de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Section ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre Section" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici la Section de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Comite ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre comite" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici la comite de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">@lang('Cellule ')</label>
-                                        <input type="text" class="form-control" placeholder="Ecrivez ici votre Cellule" required>
+                                        <input type="text" class="form-control" placeholder="Ecrivez ici la Cellule de votre bureau de vote" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">

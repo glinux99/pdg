@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    @section('header')
-        @include('layouts.header')
-    @show
+@section('header')
+@include('layouts.header')
+@show
 
 <body>
     @section('navbar')
-        @include('layouts.navbar')
+    @include('layouts.navbar')
     @show
-	
-	@yield('content')
-	
+
+    @yield('content')
+
     @section('footer')
-        @include('layouts.footer')
+    @include('layouts.footer')
     @show
 
     @section('scripts')
-        @include('layouts.scripts')
+    @include('layouts.scripts')
     @show
+    @include('layouts.modal')
 </body>
+
 </html>

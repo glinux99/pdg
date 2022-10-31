@@ -959,7 +959,7 @@ label.custom-radio .radio:after {
     position: relative;
     white-space: nowrap;
     z-index: 1;
-    background: #fdec00;
+    background: hsla(56, 98%, 58%, 0.795);
     transition: all .5s ease;
     border-radius: 4px;
 }
@@ -1315,7 +1315,7 @@ span.type-tag {
 }
 
 .bg-custom-1 {
-    background-color: var(--yellow-pdg);
+    background-color: hsla(61, 62%, 52%, 0.986);
     ;
 }
 
