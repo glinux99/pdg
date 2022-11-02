@@ -92,7 +92,7 @@
                         <img src="{{asset('assets/img/money.svg')}}" alt="" class="img-fluid">
                     </div>
                     <div class="service-text-box">
-                        <p>Soyez un coup de main</p>
+                        <p>Donnez un coup de main</p>
                         <h6>en tant que donateur</h6>
                     </div>
                 </div>
@@ -241,7 +241,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="feedback-item-two">
-                                <img src="{{asset('assets/img/testimonial/temoignage1.jpeg')}}" alt="Feedback">
+                                <img src="{{asset('assets/img/story-big/storyg6.jpg')}}" alt="Feedback">
                                 <p class="text-white fs-16">J'aime la politique et par rapport à d'autres entreprises, ses politiques et son support client sont très bons et faciles à atteindre. De plus, ils sont souvent incapables de livrer. Quis ipsum suspendisse ultrices gravida. Risus
                                     commodo
                                     viverra
@@ -252,7 +252,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="feedback-item-two">
-                                <img src="{{asset('assets/img/testimonial/temoignage2.jpeg')}}" alt="Feedback">
+                                <img src="{{asset('assets/img/categories/category7.png')}}" alt="Feedback">
                                 <p class="text-white fs-16">J'aime la politique et par rapport à d'autres entreprises, ses politiques et son support client sont très bons et faciles à atteindre. De plus, ils sont souvent incapables de livrer. Quis ipsum suspendisse ultrices gravida. Risus
                                     commodo
                                     viverra
@@ -284,13 +284,22 @@
                                 <a href="#">
                                     <img src="{{asset('assets/')}}/img/help.svg" alt="img">
                                 </a>
+                                <div class="service-text-box icon-box-level">
+                                    <!-- <p>Participer</p> -->
+                                    <h6>Participer en tant que bénévole</h6>
+                                </div>
                             </div>
+
                         </div>
                         <div class="col">
                             <div class="icon-box">
                                 <a href="#">
                                     <img src="{{asset('assets/')}}/img/cash.svg" alt="img">
                                 </a>
+                                <div class="service-text-box icon-box-level">
+                                    <!-- <p>Participer</p> -->
+                                    <h6>Participer dans notre mission</h6>
+                                </div>
                             </div>
                         </div>
                         <div class="col">
@@ -298,20 +307,28 @@
                                 <a href="#">
                                     <img src="{{asset('assets/')}}/img/investor.svg" alt="img">
                                 </a>
+                                <div class="service-text-box icon-box-level">
+                                    <!-- <p>Participer</p> -->
+                                    <h6>Participer en tant qu'électeur</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <!-- <div class="col">
                             <div class="icon-box">
                                 <a href="#">
                                     <img src="{{asset('assets/')}}/img/help.svg" alt="img">
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col">
                             <div class="icon-box">
                                 <a href="#">
                                     <img src="{{asset('assets/')}}/img/money.svg" alt="img">
                                 </a>
+                                <div class="service-text-box icon-box-level">
+                                    <!-- <p>Participer</p> -->
+                                    <h6>Participer en tant que donateur</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -333,7 +350,7 @@
                                     <ul>
                                         <li class="fs-14 text-custom-pink mb-xl-20">
                                             <i class="fas fa-calendar-week"></i>
-                                            <span class="text-custom-white">24 May 2020</span>
+                                            <span class="text-custom-white">24 May 2023</span>
                                         </li>
                                         <li class="fs-14 text-custom-pink mb-xl-20">
                                             <i class="fas fa-map-marker-alt"></i>

@@ -209,6 +209,20 @@ label {
     background: rgb(142, 208, 252, .95);
 }
 
+@keyframes pulse-blue {
+    0% {
+        box-shadow: 0 0 0 0 rgb(28, 186, 62);
+    }
+
+    70% {
+        box-shadow: 0 0 0 30px rgb(209, 162, 132, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(209, 162, 132, 0);
+    }
+}
+
 .bg-blue-22::before {
     content: '';
     position: absolute;
@@ -228,7 +242,7 @@ label {
     box-shadow: 0 2px 14px 0px rgba(0, 0, 0, 0.1);
     width: 30px;
     height: 40px;
-    background: #ba1c24;
+    background: #28a745;
     border-radius: 10%;
     top: 52%;
     transform: translate(0%, -48%);
@@ -486,7 +500,7 @@ p {
 }
 
 a {
-    color: #ba1c24;
+    color: #28a745;
     text-decoration: none;
     -webkit-transition: all .3s ease-in-out 0s;
     -o-transition: all .3s ease-in-out 0s;
@@ -853,15 +867,15 @@ label.custom-radio .radio {
 label.custom-checkbox:hover input~.checkmark,
 label.custom-radio input:checked~.radio {
     background-color: #fff;
-    border: 1px solid #ba1c24;
+    border: 1px solid #28a745;
 }
 
 /* When the checkbox is checked, add a blue background */
 
 label.custom-checkbox input:checked~.checkmark,
 label.custom-radio input:checked~.radio {
-    background-color: #ba1c24;
-    border: 1px solid #ba1c24;
+    background-color: #28a745;
+    border: 1px solid #28a745;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -1127,8 +1141,8 @@ a.btn-solid:hover {
 
 .btn-submit:hover,
 .btn-submit:focus {
-    border-color: #ba1c24;
-    background-color: #ba1c24;
+    border-color: #28a745;
+    background-color: #28a745;
     color: #fff;
 }
 
@@ -1253,11 +1267,11 @@ span.type-tag {
 }
 
 .btn-text-dark {
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .btn-text-dark:before {
-    background-color: #ba1c24;
+    background-color: #28a745;
 }
 
 /*==================
@@ -1746,7 +1760,7 @@ span.type-tag {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #ba1c24;
+    background: #28a745;
     color: #fff;
     display: flex;
     align-items: center;
@@ -2282,7 +2296,7 @@ span.type-tag {
     border-radius: 0;
     border-color: transparent;
     text-transform: capitalize;
-    background: #ba1c24;
+    background: #28a745;
     color: #fff;
     padding: 10px 15px;
 }
@@ -3040,9 +3054,9 @@ span.type-tag {
     line-height: 1;
     text-transform: capitalize;
     padding: 8px 10px;
-    border: 1px solid #ba1c24;
+    border: 1px solid #28a745;
     border-bottom: none;
-    background-color: #ba1c24;
+    background-color: #28a745;
 }
 
 .shop-detail-description-sec .nav-tabs li a:hover,
@@ -3091,7 +3105,7 @@ span.type-tag {
 }
 
 .shop-detail-description-sec .btn-first {
-    border: 1px solid #ba1c24;
+    border: 1px solid #28a745;
 }
 
 .shop-detail-description-sec .btn-first:hover {
@@ -3439,7 +3453,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .breadcrumb-area .breadcrumb-content ul>li.active {
-    color: #ba1c24;
+    color: #28a745;
     font-weight: 600;
 }
 
@@ -3488,18 +3502,18 @@ footer .footer-links .contact-info li a span {
 .side-bar .blog-tags a {
     display: inline-block;
     padding: 5px 10px;
-    border: #ba1c24 solid 1px;
+    border: #28a745 solid 1px;
     margin: 0 5px 10px 0;
     border-radius: 4px;
     background: #fff;
     font-weight: 500;
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .side-bar .blog-tags a:hover {
-    background: #ba1c24;
+    background: #28a745;
     color: #fff;
-    border: #ba1c24 solid 1px;
+    border: #28a745 solid 1px;
 }
 
 .side-bar .trending-blog-cat li {
@@ -4530,7 +4544,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .sidebar .cart-detail-box>.card>.modify-order>.total-amount {
-    background-color: #ba1c24;
+    background-color: #28a745;
 }
 
 /*======================
@@ -5940,7 +5954,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .text-custom-pink {
-    color: #ba1c24;
+    color: #28a745;
 }
 
 /*aboutus*/
@@ -6021,7 +6035,7 @@ footer .footer-links .contact-info li a span {
     position: absolute;
     top: 0;
     left: 10px;
-    background: #ba1c24;
+    background: #28a745;
     color: #fff;
     border-radius: 50%;
     width: 30px;
@@ -6123,14 +6137,14 @@ footer .footer-links .contact-info li a span {
     top: 50%;
     width: 15px;
     height: 15px;
-    background-color: #ba1c24;
+    background-color: #28a745;
     border-radius: 50%;
     transform: translate(0px, -50%);
     cursor: pointer;
 }
 
 .delivery-slider .irs--flat .irs-bar {
-    background-color: #ba1c24;
+    background-color: #28a745;
 }
 
 .delivery-slider .irs--flat .irs-from:before,
@@ -6146,7 +6160,7 @@ footer .footer-links .contact-info li a span {
     margin-left: -3px;
     overflow: hidden;
     border: 3px solid transparent;
-    border-top-color: #ba1c24;
+    border-top-color: #28a745;
 }
 
 .delivery-slider .irs--flat .irs-from,
@@ -6157,7 +6171,7 @@ footer .footer-links .contact-info li a span {
     line-height: 1.333;
     text-shadow: none;
     padding: 1px 5px;
-    background-color: #ba1c24;
+    background-color: #28a745;
     border-radius: 4px;
 }
 
@@ -6187,7 +6201,7 @@ footer .footer-links .contact-info li a span {
     height: 100%;
     padding: 0 0 0 30px;
     width: 100%;
-    border: 1px #ba1c24 solid;
+    border: 1px #28a745 solid;
     border-right: none;
     box-shadow: none;
     border-radius: 999px;
@@ -6228,8 +6242,8 @@ footer .footer-links .contact-info li a span {
 }
 
 .subscribe-content button.button span {
-    background: #ba1c24;
-    border-left: 1px solid #ba1c24;
+    background: #28a745;
+    border-left: 1px solid #28a745;
     color: #fff;
     font-size: 18px;
     height: 70px;
@@ -6385,9 +6399,9 @@ footer .footer-links .contact-info li a span {
 
 .shop-tabs.nav-pills .nav-link.active,
 .shop-tabs.nav-pills .show>.nav-link {
-    color: #ba1c24;
+    color: #28a745;
     background-color: transparent;
-    border-bottom: 1px solid #ba1c24;
+    border-bottom: 1px solid #28a745;
     border-radius: 0px;
     font-weight: 600;
 }
@@ -6525,7 +6539,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .text-color-primary {
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .text-color-secondary {
@@ -6541,7 +6555,7 @@ footer .footer-links .contact-info li a span {
 
 .product-box .product-raised li {
     font-size: 14px;
-    color: #ba1c24;
+    color: #28a745;
     font-weight: 700;
 }
 
@@ -6557,7 +6571,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .product-box .progress-bar-color {
-    background-color: #ba1c24;
+    background-color: #28a745;
 }
 
 .product-box .progress .progress-bar {
@@ -6624,19 +6638,7 @@ footer .footer-links .contact-info li a span {
 
 /* Video-icon */
 
-@keyframes pulse-blue {
-    0% {
-        box-shadow: 0 0 0 0 rgb(186, 28, 36);
-    }
 
-    70% {
-        box-shadow: 0 0 0 30px rgb(209, 162, 132, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgb(209, 162, 132, 0);
-    }
-}
 
 @keyframes pulse-blue-small {
     0% {
@@ -6662,7 +6664,7 @@ footer .footer-links .contact-info li a span {
 .blob {
     box-shadow: 0 0 0 0 rgb(76, 39, 60);
     animation: pulse-blue 2s infinite;
-    background: #ba1c24;
+    background: #28a745;
 }
 
 .play-btn {
@@ -6841,7 +6843,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .dontaion-pro-box .cause-progress .progress-bar {
-    background: #ba1c24;
+    background: #28a745;
     height: 7px;
     position: relative;
     border-radius: 6px;
@@ -6851,7 +6853,7 @@ footer .footer-links .contact-info li a span {
     position: absolute;
     top: -43px;
     right: 0;
-    background: #ba1c24;
+    background: #28a745;
     padding: 0 5px;
     font-size: 11px;
     height: 22px;
@@ -6864,7 +6866,7 @@ footer .footer-links .contact-info li a span {
     position: absolute;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid #ba1c24;
+    border-top: 6px solid #28a745;
     bottom: -6px;
     left: 50%;
     margin-left: -6px;
@@ -6901,7 +6903,7 @@ footer .footer-links .contact-info li a span {
 .dontaion-pro-box .causes-amount span {
     font-weight: 600;
     font-size: 18px;
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .banner-statistics.dontaion-promo:hover img {
@@ -7012,11 +7014,11 @@ footer .footer-links .contact-info li a span {
 }
 
 .blog-item-box .blog-item-title:hover a {
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .blog-item-badge {
-    background-color: #ba1c24;
+    background-color: #28a745;
 }
 
 .blog-item-box .blog-item-details {
@@ -7034,7 +7036,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .blog-item-details span i {
-    color: #ba1c24;
+    color: #28a745;
     margin-right: 5px;
     vertical-align: middle;
 }
@@ -7099,7 +7101,7 @@ footer .footer-links .contact-info li a span {
 
 .sa-causes-single .causes-details h3 a {
     font-size: 22px;
-    color: #ba1c24;
+    color: #28a745;
     font-weight: 600;
 }
 
@@ -7121,7 +7123,7 @@ footer .footer-links .contact-info li a span {
 
 .our-articles .cause-progress .progress-bar,
 .sa-causes-single .cause-progress .progress-bar {
-    background: #ba1c24;
+    background: #28a745;
     height: 7px;
     position: relative;
 }
@@ -7131,7 +7133,7 @@ footer .footer-links .contact-info li a span {
     position: absolute;
     top: -43px;
     right: 0;
-    background: #ba1c24;
+    background: #28a745;
     padding: 0 5px;
     font-size: 11px;
     height: 22px;
@@ -7145,7 +7147,7 @@ footer .footer-links .contact-info li a span {
     position: absolute;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid #ba1c24;
+    border-top: 6px solid #28a745;
     bottom: -6px;
     left: 50%;
     margin-left: -6px;
@@ -7261,7 +7263,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .btn-area:hover a {
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .mx-center-width {
@@ -7316,7 +7318,7 @@ footer .footer-links .contact-info li a span {
 .featured-pro-content .featured-pro-text .price {
     font-size: 26px;
     font-weight: 600;
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .countdown-box .time-box:last-child {
@@ -7341,7 +7343,7 @@ footer .footer-links .contact-info li a span {
 
 .large-product-box .featured-pro-bottom ul li strong {
     font-size: 16px;
-    color: #ba1c24;
+    color: #28a745;
     font-weight: 700;
 }
 
@@ -7390,7 +7392,7 @@ footer .footer-links .contact-info li a span {
 .feedback-slider .swiper-button-prev,
 .feedback-slider .swiper-button-next {
     background-color: #141433;
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .feedback-slider .swiper-button-next:after,
@@ -7429,18 +7431,18 @@ footer .footer-links .contact-info li a span {
 .post-details-tags-social .tags a {
     display: inline-block;
     padding: 5px 15px;
-    border: #ba1c24 solid 1px;
+    border: #28a745 solid 1px;
     border-radius: 4px;
     margin: 0 5px 10px 0;
     background: #ffffff;
     font-weight: 500;
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .post-details-tags-social .tags a:hover {
-    border-color: #ba1c24;
+    border-color: #28a745;
     color: #ffffff;
-    background: #ba1c24;
+    background: #28a745;
 }
 
 .social-media-box>ul {
@@ -7529,7 +7531,7 @@ footer .footer-links .contact-info li a span {
 
 .text-404 {
     font-size: 250px;
-    color: #ba1c24;
+    color: #28a745;
     font-weight: bolder;
 }
 
@@ -7602,7 +7604,7 @@ footer .footer-links .contact-info li a span {
 .paravideo-sec .video-sec .video-sec-left .video-sec-left-inner .upcoming-cam-timer .countdown-box .counter-box {
     background: white;
     padding: 8px 9px;
-    border: 1px solid #ba1c24;
+    border: 1px solid white;
     border-radius: 4px;
     text-align: center;
     margin-right: 15px;
@@ -7611,7 +7613,7 @@ footer .footer-links .contact-info li a span {
     color: #fff;
     align-items: center;
     justify-content: center;
-    background: #ba1c24;
+    background: #1eba1c;
     width: 70px;
     height: 70px;
     border-radius: 3px;
@@ -7666,7 +7668,7 @@ footer .footer-links .contact-info li a span {
     font-size: 70px;
     text-align: center;
     line-height: 1;
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .group-form input {
@@ -7674,7 +7676,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .group-form button {
-    background: #ba1c24;
+    background: #28a745;
     color: #fff;
     padding: 0 20px;
     border-radius: 0 4px 4px 0;
@@ -7691,7 +7693,7 @@ footer .footer-links .contact-info li a span {
 
 .horizontal-line:before {
     content: '';
-    background: -webkit-linear-gradient(left, #141433, #233359 50%, #2e3f6a 50%, #ba1c24);
+    background: -webkit-linear-gradient(left, #141433, #233359 50%, #2e3f6a 50%, #28a745);
     position: absolute;
     top: 0;
     left: 0;
@@ -7714,7 +7716,7 @@ footer .footer-links .contact-info li a span {
 
 .aboutus .history-title .about-box ul li i {
     margin-right: 10px;
-    color: #ba1c24;
+    color: #28a745;
 }
 
 .aboutus .history-title .img-box,
@@ -7759,7 +7761,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .masonary-gallery-sec .masonary-box {
-    background: #ba1c24;
+    background: #28a745;
     min-height: 400px;
 }
 
@@ -7820,7 +7822,7 @@ footer .footer-links .contact-info li a span {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: #ba1c24;
+    background: #28a745;
     content: '';
     transition: 0.4s;
 }
@@ -7843,7 +7845,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .masonary-gallery-sec .video-box .video_wrapper .videoPoster .video-inner a {
-    border: 2px solid #ba1c24;
+    border: 2px solid #28a745;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7854,7 +7856,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .masonary-gallery-sec .video-box .video_wrapper .videoPoster .video-inner a i {
-    color: #ba1c24;
+    color: #28a745;
     position: absolute;
     left: 5px;
 }
@@ -7886,6 +7888,15 @@ footer .footer-links .contact-info li a span {
     font-size: 60px;
 }
 
+.icon-box-level {
+    display: none;
+    transition: display 5s ease-in-out;
+}
+
+.icon-box:hover .icon-box-level {
+    display: block;
+}
+
 .overlay-bg-dark-2 {
     background: #000000;
     opacity: 0.5;
@@ -7896,7 +7907,7 @@ footer .footer-links .contact-info li a span {
 }
 
 .causes-details h5:hover a {
-    color: #ba1c24;
+    color: #28a745;
 }
 
 /* About */

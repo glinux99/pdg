@@ -5,7 +5,7 @@
             <div class="col-12">
                 <div class="section-header-left text-center">
                     <h3 class="text-light-black header-title">S'inscrire au Newsletter</h3>
-                    <p>Pour recevoir les dernières offres et réductions de la boutique. </p>
+                    <p>Pour recevoir les dernières nouvelles de notre parti. </p>
                 </div>
             </div>
         </div>
