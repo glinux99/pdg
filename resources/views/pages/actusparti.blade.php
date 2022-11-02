@@ -98,7 +98,7 @@ Historique du parti
                                         « Le Commonwealth c’est deux milliards cinq cent millions de consommateurs ; l’entrée dans cette grande communauté, forte désormais de 56 Etats membres offre pour le Gabon de nouvelles opportunités de développement aux plans diplomatique, économique, culturel et environnemental », a estimé avec satisfaction David Ella Mintsa.
                                     </p>
                                     <p>
-                                    <div class="d-flex justify-content-center" role="group" aria-label="Third group">
+                                    <div class="d-flex justify-content-center " role="group" aria-label="Third group">
                                         <a href="#" class="btn-solid with-line btn-big mt-20 mr-1"><span>Lire plus <i class="fas fa-caret-right"></i></span></a>
                                     </div>
                                     </p>

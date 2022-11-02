@@ -964,7 +964,7 @@ label.custom-radio .radio:after {
     padding: 0.4375rem 1.875rem 0.4375rem;
     display: inline-block;
     font-size: 0.875rem;
-    color: #fff;
+    color: rgb(70, 110, 70);
     letter-spacing: 0.5px;
     font-weight: 500;
     text-transform: uppercase;
@@ -973,6 +973,7 @@ label.custom-radio .radio:after {
     position: relative;
     white-space: nowrap;
     z-index: 1;
+    font-weight: bold;
     background: hsla(56, 98%, 58%, 0.795);
     transition: all .5s ease;
     border-radius: 4px;
@@ -5793,6 +5794,7 @@ footer .footer-links .contact-info li a span {
 11. Geo Locator
 ===========================*/
 
+
 .inner-wrapper {
     height: inherit;
     position: relative;
@@ -7876,6 +7878,8 @@ footer .footer-links .contact-info li a span {
 .single-banner {
     height: 800px;
 }
+
+
 
 .single-banner>img {
     width: 100%;
