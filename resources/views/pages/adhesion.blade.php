@@ -235,7 +235,7 @@ adhesion
                 <!-- fieldsets -->
                 <fieldset>
                     <h2 class="fs-title">Details personnels</h2>
-                    <h3 class="fs-subtitle">Tell us something more about you</h3>
+                    <h3 class="fs-subtitle">Les champs * sont obligatoires</h3>
                     <div class="row">
                         <div class="col-md-6">
 
@@ -255,38 +255,135 @@ adhesion
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="select">
-                                <label id="Sexe_label" for="Sexe">Sexe</label>
-                                <div class="input-group mb-3">
-                                    <select id="Sexe" name="Sexe" class="form-select" aria-label="">
-                                        <option>--Selectionner votre sexe--</option>
-                                        <option>Masculin</option>
-                                        <option>Femimin</option>
-                                    </select>
-                                </div>
-                            </div>
+                            <span class="label">Sexe</span>
+                            <select id="Sexe" name="Sexe" class="form-select" aria-label="">
+                                <option>--Selectionner votre sexe--</option>
+                                <option>Masculin</option>
+                                <option>Femimin</option>
+                            </select>
                         </div>
                         <div class="col-md-6">
                             <span class="label">Lieu de naissance :</span>
-                            <input type="text" name="lname" placeholder="Lieu de naissance" />
+                            <input type="text" name="lname" placeholder="Lieu de naissance" value="France-Ville" />
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="inputDate de naissance" class="control-label">Date de naissance:</label>
+                                <span for="inputDate de naissance" class="control-label">Date de naissance:</span>
                                 <div class="">
                                     <input type="date" name="Date de naissance" id="inputDate de naissance" value="" required="required" title="">
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <span class="label">Type de piece d'identite</span>
+                            <select id="Sexe" name="Sexe" class="form-select" aria-label="">
+                                <option>--Selectionner votre type de piece--</option>
+                                <option>Permis de conduire</option>
+                                <option>Carte d'electeur</option>
+                                <option>Carte de citoyennete</option>
+                                <option>Carte d'eleve</option>
+                                <option>Carte d'etudiant</option>
+                                <option>Autres</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <span class="label">Numero de votre piece: </span>
+
+                            <input type="number" name="" id="" placeholder="2246648900034">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Situation Matrimoniale:</span>
+                            <select id="Sexe" name="Sexe" class="form-select" aria-label="">
+                                <option>--Selectionner votre status matrimoniale--</option>
+                                <option>Mariee</option>
+                                <option>Fiancee</option>
+                                <option>Concubinage</option>
+                                <option>Celibataire</option>
+                                <option>Veuf(ve)</option>
+                                <option>Autres</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+
+                            <span class="label">Lieu de residence actuel: </span>
+                            <input type="text" name="" id="" placeholder="Votre lieu de residence actuel">
+
+                        </div>
                     </div>
                     <input type="button" name="next" class="next action-button" value="Next" />
                 </fieldset>
                 <fieldset>
-                    <h2 class="fs-title">Details sur la profession</h2>
-                    <h3 class="fs-subtitle">Your presence on the social network</h3>
-                    <input type="text" name="twitter" placeholder="Twitter" />
-                    <input type="text" name="facebook" placeholder="Facebook" />
-                    <input type="text" name="gplus" placeholder="Google Plus" />
+                    <h2 class="fs-title">Details personnels supplementaires</h2>
+                    <h3 class="fs-subtitle">Details sur la profession</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="label">Nom et Prenom du Pere:</span>
+                            <input type="text" name="" id="" placeholder="Nom et prenom de votre pere">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Nom et Prenom du Mere:</span>
+                            <input type="text" name="" id="" placeholder="Nom et prenom de votre mere">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Profession:</span>
+                            <input type="text" name="" id="" placeholder="Votre profession">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Employeur:</span>
+                            <input type="text" name="" id="" placeholder="Votre employeur">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Fonction:</span>
+                            <input type="text" name="" id="" placeholder="Votre fonction">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Type d'employeur:</span>
+                            <select id="Sexe" name="Sexe" class="form-select" aria-label="">
+                                <option>--Selectionner votre type d'emploayeur--</option>
+                                <option value="">Etat</option>
+                                <option value="">Prive</option>
+                                <option value="">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Informations supplementaires</h2>
+                    <h3 class="fs-subtitle">Details sur la profession</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="label">Nom et Prenom du Pere:</span>
+                            <input type="text" name="" id="" placeholder="Nom et prenom de votre pere">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Nom et Prenom du Mere:</span>
+                            <input type="text" name="" id="" placeholder="Nom et prenom de votre mere">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Profession:</span>
+                            <input type="text" name="" id="" placeholder="Votre profession">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Employeur:</span>
+                            <input type="text" name="" id="" placeholder="Votre employeur">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Fonction:</span>
+                            <input type="text" name="" id="" placeholder="Votre fonction">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Type d'employeur:</span>
+                            <select id="Sexe" name="Sexe" class="form-select" aria-label="">
+                                <option>--Selectionner votre type d'emploayeur--</option>
+                                <option value="">Etat</option>
+                                <option value="">Prive</option>
+                                <option value="">Autre</option>
+                            </select>
+                        </div>
+                    </div>
                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" />
                 </fieldset>
