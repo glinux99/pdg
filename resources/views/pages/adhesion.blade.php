@@ -216,6 +216,7 @@ adhesion
         min-height: 70vh;
     }
 </style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/css/intlTelInput.css">
 <div class="amazing">
 
     <div class="row">
@@ -223,22 +224,58 @@ adhesion
             <form id="msform">
                 <!-- progressbar -->
                 <ul id="progressbar">
-                    <li class="active">Personal Details</li>
-                    <li>Social Profiles</li>
-                    <li>Account Setup</li>
+                    <li class="active">Details personnels</li>
+                    <li>Details sur votre profession</li>
+                    <li>Details sur votre bureau de votre</li>
 
                 </ul>
                 <!-- fieldsets -->
                 <fieldset>
-                    <h2 class="fs-title">Personal Details</h2>
+                    <h2 class="fs-title">Details personnels</h2>
                     <h3 class="fs-subtitle">Tell us something more about you</h3>
-                    <input type="text" name="fname" placeholder="First Name" />
-                    <input type="text" name="lname" placeholder="Last Name" />
-                    <input type="text" name="phone" placeholder="Phone" />
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <span class="label">Nom :</span>
+                            <input type="text" name="fname" placeholder="Votre nom" />
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Prenom :</span>
+                            <input type="text" name="lname" placeholder="Votre prenom" />
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label">Telephone :</span>
+                            <div class="form-group has-danger">
+                                <input id="phone" class="" type="tel" name="phone" maxlength="15" />
+                                <br>
+                                <span id="error-msg" class="hide"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="select">
+                                <label id="Sexe_label" for="Sexe">Sexe</label>
+                                <div class="input-group mb-3">
+                                    <select id="Sexe" name="Sexe" class="form-control form-select" aria-label="">
+                                        <option>--Selectionner votre sexe--</option>
+                                        <option>Masculin</option>
+                                        <option>Femimin</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputDate de naissance" class="control-label">Date de naissance:</label>
+                                <div class="">
+                                    <input type="date" name="Date de naissance" id="inputDate de naissance" class="form-control" value="" required="required" title="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <input type="button" name="next" class="next action-button" value="Next" />
                 </fieldset>
                 <fieldset>
-                    <h2 class="fs-title">Social Profiles</h2>
+                    <h2 class="fs-title">Details sur la profession</h2>
                     <h3 class="fs-subtitle">Your presence on the social network</h3>
                     <input type="text" name="twitter" placeholder="Twitter" />
                     <input type="text" name="facebook" placeholder="Facebook" />
@@ -247,7 +284,7 @@ adhesion
                     <input type="button" name="next" class="next action-button" value="Next" />
                 </fieldset>
                 <fieldset>
-                    <h2 class="fs-title">Create your account</h2>
+                    <h2 class="fs-title">Details sur votre bureau de votre</h2>
                     <h3 class="fs-subtitle">Fill in your credentials</h3>
                     <input type="text" name="email" placeholder="Email" />
                     <input type="password" name="pass" placeholder="Password" />
@@ -357,4 +394,122 @@ adhesion
     })
 </script>
 <!-- /.MultiStep Form -->
+<!-- input number -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/intlTelInput.js"></script>
+<script>
+    var input = document.querySelector("#phone"),
+        errorMap = ["Numero Invalide", "Code de pays invalide", "Trop petit", "Trop long", "Numero invalide"],
+        result = document.querySelector("#result");
+
+
+    window.addEventListener("load", function() {
+
+
+        errorMsg = document.querySelector("#error-msg");
+
+        function getIp(callback) {
+            fetch('https://ipinfo.io', {
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then((resp) => resp.json())
+                .catch(() => {
+                    return {
+                        country: '',
+                    };
+                })
+                .then((resp) => callback(resp.country));
+        }
+
+        var iti = window.intlTelInput(input, {
+            // allowDropdown: false,
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            hiddenInput: "full_number",
+            nationalMode: false,
+            formatOnDisplay: true,
+            separateDialCode: true,
+            autoHideDialCode: true,
+            autoPlaceholder: "aggressive",
+            initialCountry: "ga",
+            placeholderNumberType: "MOBILE",
+            preferredCountries: ['ga', 'cd'],
+            geoIpLookup: getIp,
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/utils.js",
+        });
+
+
+        input.addEventListener('keyup', formatIntlTelInput);
+        input.addEventListener('change', formatIntlTelInput);
+
+        function formatIntlTelInput() {
+            if (typeof intlTelInputUtils !== 'undefined') { // utils are lazy loaded, so must check
+                var currentText = iti.getNumber(intlTelInputUtils.numberFormat.E164);
+                if (typeof currentText === 'string') { // sometimes the currentText is an object :)
+                    iti.setNumber(currentText); // will autoformat because of formatOnDisplay=true
+                }
+            }
+        }
+
+
+
+        input.addEventListener('keyup', function() {
+            reset();
+            if (input.value.trim()) {
+                if (iti.isValidNumber()) {
+                    $(input).addClass('form-control is-valid');
+
+                } else {
+                    $(input).addClass('form-control is-invalid');
+                    var errorCode = iti.getValidationError();
+                    errorMsg.innerHTML = errorMap[errorCode];
+                    $(errorMsg).show();
+                }
+            }
+        });
+        input.addEventListener('change', reset);
+        input.addEventListener('keyup', reset);
+
+        var reset = function() {
+            $(input).removeClass('form-control is-invalid');
+            errorMsg.innerHTML = "";
+            $(errorMsg).hide();
+
+        };
+
+
+
+        ////////////// testing - start //////////////
+
+        input.addEventListener('keyup', function(e) {
+            e.preventDefault();
+            var num = iti.getNumber(),
+                valid = iti.isValidNumber();
+            result.textContent = "Number: " + num + ", valid: " + valid;
+        }, false);
+
+        input.addEventListener("focus", function() {
+            result.textContent = "";
+        }, false);
+
+
+        $(input).on("focusout", function(e, countryData) {
+            var intlNumber = iti.getNumber();
+            console.log(intlNumber);
+        });
+
+        ////////////// testing - end //////////////
+
+    });
+
+
+    //-----------------------only-phone-number-input code (with +)-------------------------------start-------//
+    function isPhoneNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : evt.keyCode
+        if (charCode != 43 && charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+        return true;
+    }
+</script>
 @endsection
