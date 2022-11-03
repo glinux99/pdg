@@ -1,6 +1,7 @@
 <!-- Place all Scripts Here -->
 <!-- jQuery -->
 <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+
 <!-- Popper -->
 <script src="{{asset('assets/js/popper.min.js')}}"></script>
 <!-- Bootstrap -->
@@ -16,6 +17,7 @@
 <!-- VITTO Js -->
 <script src="{{asset('assets/js/main.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script>
     function sweetAlert() {
         let timerInterval
