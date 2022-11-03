@@ -50,6 +50,7 @@ adhesion
 
     /*inputs*/
     #msform input,
+    #msform select,
     #msform textarea {
         padding: 15px;
         border: 1px solid #ccc;
@@ -62,7 +63,9 @@ adhesion
         font-size: 13px;
     }
 
+
     #msform input:focus,
+    #msform select:focus,
     #msform textarea:focus {
         -moz-box-shadow: none !important;
         -webkit-box-shadow: none !important;
@@ -255,7 +258,7 @@ adhesion
                             <div class="select">
                                 <label id="Sexe_label" for="Sexe">Sexe</label>
                                 <div class="input-group mb-3">
-                                    <select id="Sexe" name="Sexe" class="form-control form-select" aria-label="">
+                                    <select id="Sexe" name="Sexe" class="form-select" aria-label="">
                                         <option>--Selectionner votre sexe--</option>
                                         <option>Masculin</option>
                                         <option>Femimin</option>
@@ -264,10 +267,14 @@ adhesion
                             </div>
                         </div>
                         <div class="col-md-6">
+                            <span class="label">Lieu de naissance :</span>
+                            <input type="text" name="lname" placeholder="Lieu de naissance" />
+                        </div>
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="inputDate de naissance" class="control-label">Date de naissance:</label>
                                 <div class="">
-                                    <input type="date" name="Date de naissance" id="inputDate de naissance" class="form-control" value="" required="required" title="">
+                                    <input type="date" name="Date de naissance" id="inputDate de naissance" value="" required="required" title="">
                                 </div>
                             </div>
                         </div>
